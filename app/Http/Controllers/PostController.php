@@ -150,7 +150,6 @@ class PostController extends Controller
         $post = Posts::findorfail($id);
         $post->delete();
 
-
         return redirect()->back()->with('success', 'Post Berhasil Dihapus (Silahkan cek trashed post)');
 
     }
@@ -173,6 +172,14 @@ class PostController extends Controller
     {
         $post = Posts::withTrashed()->where('id', $id)->first();
         $post->forceDelete();
+
+
+        // untuk menghapus fhoto yang sudah dihapus permanen
+        // $image_path = app_path("images/post/{$post->gambar}");
+        // if (posts::exists($image_path)) {
+        //     //File::delete($image_path);
+        //     unlink($image_path);
+        // }
 
         return redirect()->back()->with('success', 'Post Berhasil Dihapus Secara Permanen');
     }
