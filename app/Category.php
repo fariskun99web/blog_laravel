@@ -8,4 +8,14 @@ class Category extends Model
 {
     protected $fillable = ['name', 'slug'];
     protected $table = 'category';
+
+    public function posts(){
+        return $this->hasMany('App\Posts');
+    }
+
+    // fungsi untuk menampilkan field slug dalam data base
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }   
 }
