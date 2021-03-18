@@ -8,7 +8,7 @@
 
                 @yield('isi')
                 @include('template_blog.widget')
-
+            </div>
         </div>
     </div>
     @include('template_blog.footer')

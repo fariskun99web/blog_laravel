@@ -80,7 +80,7 @@
             <div class="col-md-6 col-md-pull-6">
                 <div class="footer-copyright">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | By Faris Wahyu <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
@@ -92,10 +92,10 @@
 <!-- /FOOTER -->
 
 <!-- jQuery Plugins -->
-<script src="{{ asset('public/frontend/js/jquery.min.js') }}"></script>
-<script src="{{ asset('public/frontend/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('public/frontend/js/jquery.stellar.min.js') }}"></script>
-<script src="{{ asset('public/frontend/js/main.js') }}"></script>
+<script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
+<script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('frontend/js/jquery.stellar.min.js') }}"></script>
+<script src="{{ asset('frontend/js/main.js') }}"></script>
 
 </body>
 

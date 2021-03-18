@@ -17,7 +17,6 @@
                 <li><a href="author.html">{{ $list_post->users->name }}</a></li>
                 <li>{{ $list_post->created_at }}</li>
             </ul>
-            <p></p>
         </div>
     </div>
 @endforeach

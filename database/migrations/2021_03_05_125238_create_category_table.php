@@ -18,6 +18,9 @@ class CreateCategoryTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->timestamps();
+
+            // membuat relation database
+            // ->references('category_id')->on('posts');
         });
     }
 

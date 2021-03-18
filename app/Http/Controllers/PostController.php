@@ -56,14 +56,14 @@ class PostController extends Controller
             'judul' => $request->judul,
             'category_id' => $request->category_id,
             'content' => $request->content,
-            'gambar' => 'public/uploads/posts/'.$new_gambar,
+            'gambar' => 'uploads/posts/'.$new_gambar,
             'slug' => Str::slug($request->judul),
             'users_id' => Auth::id()
         ]);
 
         $post->tags()->attach($request->tags);
 
-        $gambar->move('public/uploads/posts/', $new_gambar);
+        $gambar->move('uploads/posts/', $new_gambar);
         return redirect()->back()->with('success', 'Postingan anda berhasil di simpan');
     }
 
@@ -114,13 +114,14 @@ class PostController extends Controller
         if ($request->has('gambar')) {
             $gambar = $request->gambar;
             $new_gambar = time().$gambar->getClientOriginalName();
-            $gambar->move('public/uploads/posts/', $new_gambar);
+            $gambar->move('uploads/posts/', $new_gambar);
 
+            // UNTUK MEMBUAT BLOG DAPAT DI AKSES TANPA PHP ARTISAN SERVE MAKA HILANGKAN SEMUA NAMA PUBLIC NYA EXS: ASSET(PUBLIC/FRONTEND)
             $post_data = [
                 'judul' => $request->judul,
                 'category_id' => $request->category_id,
                 'content' => $request->content,
-                'gambar' => 'public/uploads/posts/'.$new_gambar,
+                'gambar' => 'uploads/posts/'.$new_gambar,
                 'slug' => Str::slug($request->judul)
             ];
         }

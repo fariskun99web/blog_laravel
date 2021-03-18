@@ -107,7 +107,6 @@ class CategoryController extends Controller
         $category = Category::findorfail($id);
         $category->delete();
         
-        category::where('id', $id)->delete();
 
         return redirect()->back()->with('success','Data Berhasil Dihapus');
     }

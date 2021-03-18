@@ -2,10 +2,10 @@
 
 @section('isi')
 	
-<div class="col-md-8 hot-post-left">
+				<div class="col-md-8 hot-post-left">	
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="{{ asset('public/frontend/img/hot-post-1.jpg') }}" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-1.jpg') }}" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -22,7 +22,7 @@
 				<div class="col-md-4 hot-post-right">
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="{{ asset('public/frontend/img/hot-post-2.jpg') }}" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-2.jpg') }}" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
@@ -38,7 +38,7 @@
 
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="{{ asset('public/frontend/img/hot-post-3.jpg') }}" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-3.jpg') }}" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Fashion</a>
@@ -91,12 +91,10 @@
                         @endforeach
 						<!-- /post -->
                         
-					</div>
 					<!-- /row -->
-			
-				</div>
+					</div>
 				
-
+	</div>	
 			<!-- /row -->
 @endsection
 

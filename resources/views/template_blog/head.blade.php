@@ -21,19 +21,22 @@
 	<meta name="twitter:image" content="">
 	<meta name="twitter:card" content="">
 
-	<title>Callie HTML Template</title>
+	<title>Faris Wahyu R</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CMuli:400,700" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="{{ asset('public/frontend/css/bootstrap.min.css') }}" />
+	{{-- unttuk menggunakan index.php (tidak mengguanakan php artisan serve pada terminal) maka tambahkan public sebelum /frontend ('public/frontend.... ') --}}
+	<link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="{{ asset('public/frontend/css/font-awesome.min.css') }}">
+	{{-- unttuk menggunakan index.php (tidak mengguanakan php artisan serve pada terminal) maka tambahkan public sebelum /frontend ('public/frontend.... ') --}}
+	<link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="{{ asset('public/frontend/css/style.css') }}" />
+	{{-- unttuk menggunakan index.php (tidak mengguanakan php artisan serve pada terminal) maka tambahkan public sebelum /frontend ('public/frontend.... ') --}}
+	<link type="text/css" rel="stylesheet" href="{{ asset('frontend/css/style.css') }}" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,7 +66,7 @@
 
 					<!-- logo -->
 					<div class="nav-logo">
-						<a href="index.html" class="logo"><img src="{{ asset('public/frontend/img/logo.png') }}" alt=""></a>
+						<a href="index.html" class="logo"><img src="{{ asset('frontend/img/logo.png') }}" alt=""></a>
 					</div>
 					<!-- /logo -->
 
@@ -92,13 +95,13 @@
 					<ul class="nav-menu">
 						<li><a href="{{ url('') }}">Beranda</a></li>
 						<li class="has-dropdown">
-							<a href="index.html">Category</a>
+							<a>Category</a>
 							<div class="dropdown">
 								<div class="dropdown-body">
 									<ul class="dropdown-list">
 										@foreach ($category_widget as $result1)
 											
-										<li><a href="category.html">{{ $result1->name }}</a></li>
+										<li><a href="{{ route('blog.category', $result1->slug) }}">{{ $result1->name }}</a></li>
 										@endforeach
 									</ul>
 								</div>
@@ -119,11 +122,10 @@
 					<li><a href="index.html">Home</a></li>
 					<li class="has-dropdown"><a>Categories</a>
 						<ul class="dropdown">
-							<li><a href="#">Lifestyle</a></li>
-							<li><a href="#">Fashion</a></li>
-							<li><a href="#">Technology</a></li>
-							<li><a href="#">Travel</a></li>
-							<li><a href="#">Health</a></li>
+							@foreach ($category_widget as $hasil)
+                    
+							<li><a href="{{ route('blog.category', $hasil->slug) }}">{{ $hasil->name }} <span>{{ $hasil->posts->count() }}</span></a></li>
+							@endforeach
 						</ul>
 					</li>
 					<li><a href="about.html">About Us</a></li>
