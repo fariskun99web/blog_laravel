@@ -2,7 +2,7 @@
     <!-- ad widget-->
     <div class="aside-widget text-center">
         <a href="#" style="display: inline-block;margin: auto;">
-            <img class="img-responsive" src="./img/ad-3.jpg" alt="">
+            <img class="img-responsive" src="{{asset('frontend/img/ad-3.jpg') }}" alt="">
         </a>
     </div>
     <!-- /ad widget -->
@@ -60,9 +60,9 @@
         </div>
         <div class="newsletter-widget">
             <form>
-                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+                <p>kirim masukkan melalui suscribe form berikut </p>
                 <input class="input" name="newsletter" placeholder="Enter Your Email">
-                <button class="primary-button">Subscribe</button>
+                <a href="https://www.youtube.com/channel/UC3bZ003Lo7NFNJVxYmB2caw?sub_confirmation=1"><button class="primary-button">Subscribe</button></a>
             </form>
         </div>
     </div>

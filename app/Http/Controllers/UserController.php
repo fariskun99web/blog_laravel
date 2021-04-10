@@ -46,7 +46,7 @@ class UserController extends Controller
             $password = bcrypt($request->password);
         }
         else{
-            $password = bcrypt('1234');
+            $password = bcrypt('12345678');
         }
 
         User::create([
@@ -93,7 +93,7 @@ class UserController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|min:3|max:100',
-            'tipe' => 'required'
+            'tipe' => 'required',
         ]);
 
         if ($request->input('password')) {

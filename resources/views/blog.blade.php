@@ -5,15 +5,15 @@
 				<div class="col-md-8 hot-post-left">	
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-1.jpg') }}" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-2.jpg') }}" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
-								<a href="category.html">Lifestyle</a>
+								<a href="category.html">hobby</a>
 							</div>
-							<h3 class="post-title title-lg"><a href="blog-post.html">Postea senserit id eos, vivendo periculis ei qui</a></h3>
+							<h3 class="post-title title-lg"><a href="blog-post.html">bernyanyi "refresh our mind"</a></h3>
 							<ul class="post-meta">
-								<li><a href="author.html">John Doe</a></li>
-								<li>20 April 2018</li>
+								<li><a href="author.html">Faris Wahyu</a></li>
+								<li>20 march 2021</li>
 							</ul>
 						</div>
 					</div>
@@ -22,14 +22,14 @@
 				<div class="col-md-4 hot-post-right">
 					<!-- post -->
 					<div class="post post-thumb">
-						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-2.jpg') }}" alt=""></a>
+						<a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/hot-post-1.jpg') }}" alt=""></a>
 						<div class="post-body">
 							<div class="post-category">
 								<a href="category.html">Lifestyle</a>
 							</div>
-							<h3 class="post-title"><a href="blog-post.html">Sed ut perspiciatis, unde omnis iste natus error sit</a></h3>
+							<h3 class="post-title"><a href="blog-post.html">olahraga baik untuk tubuh</a></h3>
 							<ul class="post-meta">
-								<li><a href="author.html">John Doe</a></li>
+								<li><a href="author.html">Faris Wahyu</a></li>
 								<li>20 April 2018</li>
 							</ul>
 						</div>
@@ -44,9 +44,9 @@
 								<a href="category.html">Fashion</a>
 								<a href="category.html">Lifestyle</a>
 							</div>
-							<h3 class="post-title"><a href="blog-post.html">Mel ut impetus suscipit tincidunt. Cum id ullum laboramus persequeris.</a></h3>
+							<h3 class="post-title"><a href="blog-post.html">my trip my adventure</a></h3>
 							<ul class="post-meta">
-								<li><a href="author.html">John Doe</a></li>
+								<li><a href="author.html">Faris Wahyu</a></li>
 								<li>20 April 2018</li>
 							</ul>
 						</div>
@@ -54,6 +54,7 @@
 					<!-- /post -->
 				</div>
 		<!-- /container -->
+		</div>
 	</div>
 	<!-- /SECTION -->
 

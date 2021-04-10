@@ -6,8 +6,10 @@ use App\Posts;
 use App\Category;
 use App\Tags;
 use Auth;
+use File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -172,16 +174,21 @@ class PostController extends Controller
     public function kill($id)
     {
         $post = Posts::withTrashed()->where('id', $id)->first();
-        $post->forceDelete();
-
 
         // untuk menghapus fhoto yang sudah dihapus permanen
-        // $image_path = app_path("images/post/{$post->gambar}");
-        // if (posts::exists($image_path)) {
-        //     //File::delete($image_path);
-        //     unlink($image_path);
-        // }
+        if($post) {
+            if(isset($post->gambar) && File::exists($post->gambar)) {
+                unlink($post->gambar);
+            }
+            $post->forceDelete();
 
-        return redirect()->back()->with('success', 'Post Berhasil Dihapus Secara Permanen');
+            $status = 'success';
+            $message = 'Post Berhasil Dihapus Secara Permanen';
+        } else {
+            $status = 'failed';
+            $message = 'Data tidak ditemukan';
+        }
+        
+        return redirect()->back()->with($status, $message);
     }
 }
