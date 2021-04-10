@@ -9,6 +9,7 @@
     @endif
 
     <a href="{{ route('post.create') }}" class="btn btn-info btn-sm">Tambah Post</a>
+    <a href="{{ route('post.tampil_hapus') }}" class="btn btn-warning btn-sm"><i class="fas fa-trash"> keranjang sampah</a></i>
     <br><br>
 
     <table class="table table-striped table-hover table-sm table-bordered">

@@ -1,10 +1,10 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-        <a href="index.html">Admin</a>
+        <a href="#">Admin</a>
       </div>
       <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">St</a>
+        <a href="#"><img src="{{ asset('assets/img/sidebar/brand.jpg') }}" alt=""></a>
       </div>
       <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
@@ -15,7 +15,7 @@
           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-apple-alt"></i> <span>Post</span></a>
           <ul class="dropdown-menu">
             <li><a class="nav-link" href="{{ route('post.index') }}">List Post</a></li>
-            <li><a class="nav-link" href="{{ route('post.tampil_hapus') }}">List Post Dihapus</a></li>
+            {{-- <li><a class="nav-link" href="{{ route('post.tampil_hapus') }}">List Post Dihapus</a></li> --}}
             
           </ul>
         </li>
