@@ -62,8 +62,10 @@
             <form>
                 <p>kirim masukkan melalui suscribe form berikut </p>
                 <input class="input" name="newsletter" placeholder="Enter Your Email">
-                <a href="https://www.youtube.com/channel/UC3bZ003Lo7NFNJVxYmB2caw?sub_confirmation=1"><button class="primary-button">Subscribe</button></a>
+                <a href="https://www.youtube.com/channel/UC3bZ003Lo7NFNJVxYmB2caw?sub_confirmation=1"><button class="primary-button">kirim</button></a>
             </form>
+            <br><br>
+            <a href="https://www.youtube.com/channel/UC3bZ003Lo7NFNJVxYmB2caw?sub_confirmation=1"><button class="primary-button">subscribe</button></a>
         </div>
     </div>
     <!-- /newsletter widget -->
@@ -75,7 +77,7 @@
         </div>
         <!-- post -->
         <div class="post post-widget">
-            <a class="post-img" href="blog-post.html"><img src="./img/widget-3.jpg" alt=""></a>
+            <a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/widget-3.jpg') }}" alt=""></a>
             <div class="post-body">
                 <div class="post-category">
                     <a href="category.html">Lifestyle</a>
@@ -87,7 +89,7 @@
 
         <!-- post -->
         <div class="post post-widget">
-            <a class="post-img" href="blog-post.html"><img src="./img/widget-2.jpg" alt=""></a>
+            <a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/widget-2.jpg') }}" alt=""></a>
             <div class="post-body">
                 <div class="post-category">
                     <a href="category.html">Technology</a>
@@ -100,7 +102,7 @@
 
         <!-- post -->
         <div class="post post-widget">
-            <a class="post-img" href="blog-post.html"><img src="./img/widget-4.jpg" alt=""></a>
+            <a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/widget-4.jpg') }}" alt=""></a>
             <div class="post-body">
                 <div class="post-category">
                     <a href="category.html">Health</a>
@@ -112,7 +114,7 @@
 
         <!-- post -->
         <div class="post post-widget">
-            <a class="post-img" href="blog-post.html"><img src="./img/widget-5.jpg" alt=""></a>
+            <a class="post-img" href="blog-post.html"><img src="{{ asset('frontend/img/widget-5.jpg') }}" alt=""></a>
             <div class="post-body">
                 <div class="post-category">
                     <a href="category.html">Health</a>
